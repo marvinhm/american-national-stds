@@ -7,20 +7,16 @@ main() {
 
   while((c = getchar()) != EOF) {
     if(c == '\t') {
-      putchar ('\\');
+      putchar (92);
       putchar('t');
-      c = p;
     } else if(c == '\b') {
-      putchar ('\\');
+      putchar (92);
       putchar('b');
-      c = p;
     } else if(c == '\\') {
+      putchar(92);
       putchar('\\');
-      putchar('\\');
-      c = p;
     } else {
       putchar(c);
-      c = p;
     }
   }
 }
